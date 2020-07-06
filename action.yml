@@ -87,6 +87,29 @@ inputs:
     required: false
     default: ""
 
+
+  # HTML
+
+  htmllint:
+    description: Enable or disable Htmllint checks
+    required: false
+    default: false
+  htmllint_args:
+    description: Additional arguments to pass to the linter
+    required: false
+    default: ""
+  htmllint_dir:
+    description: Directory where the Htmllint command should be run
+    required: false
+  htmllint_extensions:
+    description: Extensions of files to check with Htmllint
+    required: false
+    default: "js"
+  htmllint_command_prefix:
+    description: Shell command to prepend to the linter command. Will default to `npx --no-install` for NPM and `yarn run --silent` for Yarn.
+    required: false
+    default: ""
+
   # JavaScript
 
   eslint:
